@@ -17,6 +17,7 @@ Propensity Score Matching was applied to 340K users to separate which audiences 
 - `sql/` — BigQuery queries for exploration, matching prep, and lift analysis
 - `python/` — PSM pipeline and budget simulation
 - `images/` — final charts
+- `data/` — sample dataset used for analysis; full dataset can be regenerated via script
 
 ---
 
@@ -201,11 +202,13 @@ pip install -r requirements.txt
 python python/generate_data.py    # → data/synthetic_data.csv
 python python/generate_charts.py  # → images/chart_*.png
 ```
+A sample dataset is included. Full dataset can be regenerated via script.
 
 `generate_data.py` creates a 20K-user synthetic dataset with the schema described above.  
 `generate_charts.py` runs propensity matching on that data (Chart 1) and renders all four charts.
 
 ---
+
 
 ## Code
 
