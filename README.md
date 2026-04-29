@@ -72,6 +72,8 @@ Propensity Score Matching addresses this directly. For each exposed user, the mo
 **→ Chart 1 — Propensity score distribution, before and after matching.**  
 Two histograms side by side. Before matching: the treated group skews heavily toward high propensity scores — they were targeted because they were high-intent. After matching: the distributions overlap almost perfectly. That overlap is what makes the comparison valid.
 
+![Propensity score distribution before and after matching](images/chart_1_propensity.png)
+
 ---
 
 ## What We Found
@@ -93,6 +95,8 @@ The audiences that look cheapest in the dashboard are the most expensive once me
 
 **→ Chart 2 — Reported CPA vs Incremental CPA, bubble chart.**  
 X-axis: reported CPA. Y-axis: true incremental CPA. Bubble size: spend. Colour: lift rate — red for low, green for high. Retargeting sits bottom-left (cheap reported CPA) and top-right (expensive true CPA). Prospecting is the opposite. Show this chart first in any leadership meeting.
+
+![Reported CPA vs incremental CPA by audience](images/chart_2_cpa.png)
 
 ### The aggregate gap
 
@@ -121,6 +125,8 @@ Ads start losing effectiveness after 9 impressions. After 20, they actively hurt
 
 **→ Chart 3 — Incremental CVR by frequency band.**  
 Line chart with two series: all audiences combined, and retargeting only. Retargeting peaks earlier and drops off harder. Add a dashed vertical line at frequency 9 labelled "waste starts here."
+
+![Incremental CVR by frequency band](images/chart_3_frequency.png)
 
 ---
 
@@ -157,6 +163,8 @@ Move €1.3M from retargeting to prospecting. Add frequency caps. Total spend st
 
 **→ Chart 4 — Waterfall: incremental conversion bridge.**  
 Start at 26,400. Remove conversions lost from retargeting cuts (−4,200). Add conversions gained from prospecting scale (+12,600). End at 34,800. Red bars for cuts, green for gains.
+
+![Budget reallocation waterfall](images/chart_4_waterfall.png)
 
 One thing to flag upfront: reported CPA will go up after this change. Prospecting always looks worse than retargeting in platform dashboards because it reaches people who weren't already about to convert. If the team optimises back toward reported CPA, the budget drifts back to retargeting within 6 weeks and the analysis is wasted. Changing the budget without changing the KPIs doesn't work.
 
