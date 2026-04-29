@@ -308,7 +308,3 @@ def match(df: pd.DataFrame, caliper: float = 0.01) -> pd.DataFrame:
 ---
 
 *Data is synthetic and modelled on realistic campaign structures.*
-**→ Chart 3  Incremental CVR by frequency band.**  
-Line chart with two series: all audiences combined, and retargeting only. Retargeting peaks earlier and drops off harder. Add a dashed vertical line at frequency 9 labelled "waste starts here."
-
-![Incremental CVR by frequency band](images/chart_3_frequency.png)
