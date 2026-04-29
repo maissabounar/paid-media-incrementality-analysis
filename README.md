@@ -1,6 +1,6 @@
 # Incrementality-Driven Audience Targeting for Paid Media
 
-> **€6.5M/month · France · UK · Germany · TikTok, Meta, YouTube · Q3 2025**
+> **€6.5M/month - France - UK - Germany -- TikTok, Meta, YouTube · Q3 2025**
 
 ---
 
