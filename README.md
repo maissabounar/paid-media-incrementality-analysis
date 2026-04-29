@@ -8,7 +8,7 @@
 
 Reported CPA: €106. True CPA: €246. The €140 gap is the cost of taking credit for purchases that would have happened anyway.
 
-Propensity Score Matching was applied to 340K users to separate which audiences the ads actually drove — and which ones would have converted anyway.
+Propensity Score Matching was applied to 340K users to separate which audiences the ads actually drove and which ones would have converted anyway.
 
 ---
 
@@ -62,7 +62,7 @@ Three BigQuery tables, 340K users, Q3 2025.
 
 The core problem: people who saw ads are not a random sample. Platforms deliberately serve impressions to users most likely to buy. So if you compare "people who saw ads" vs. "people who didn't", you're not measuring the ad effect — you're measuring the fact that platforms targeted high-intent users.
 
-Propensity Score Matching addresses this directly. For each exposed user, the model finds an unexposed user who looked identical before the campaign — same purchase history, same visit frequency, same loyalty status. Comparing what each pair did isolates the causal ad effect.
+Propensity Score Matching addresses this directly. For each exposed user, the model finds an unexposed user who looked identical before the campaign: same purchase history, same visit frequency, same loyalty status. Comparing what each pair did isolates the causal ad effect.
 
 **Variables used for matching (all measured before any ad exposure):**  
 `n_prior_purchases` · `days_since_last_visit` · `n_organic_sessions_30d` · `loyalty_tier` · `email_subscriber` · `age_group` · `device_type` · `country`
@@ -70,7 +70,7 @@ Propensity Score Matching addresses this directly. For each exposed user, the mo
 **Setup:** 1:1 nearest-neighbour matching, caliper = 0.01, matched within country × channel. After matching, the two groups are statistically indistinguishable on all covariates (SMD < 0.1 across the board).
 
 **→ Chart 1 — Propensity score distribution, before and after matching.**  
-Two histograms side by side. Before matching: the treated group skews heavily toward high propensity scores — they were targeted because they were high-intent. After matching: the distributions overlap almost perfectly. That overlap is what makes the comparison valid.
+Two histograms side by side. Before matching: the treated group skews heavily toward high propensity scores. they were targeted because they were high-intent. After matching: the distributions overlap almost perfectly. That overlap is what makes the comparison valid.
 
 ![Propensity score distribution before and after matching](images/chart_1_propensity.png)
 
@@ -121,7 +121,7 @@ X-axis: reported CPA. Y-axis: true incremental CPA. Bubble size: spend. Colour: 
 | 15–20 | 4.2% | +11% |
 | 21+ | 3.6% | −5% |
 
-Ads start losing effectiveness after 9 impressions. After 20, they actively hurt — users convert below their organic baseline. Some TikTok line items ran with no frequency cap. Meta retargeting hit 60+ impressions per month for certain users. That spend is not neutral — it's counterproductive.
+Ads start losing effectiveness after 9 impressions. After 20, they actively hurt; users convert below their organic baseline. Some TikTok line items ran with no frequency cap. Meta retargeting hit 60+ impressions per month for certain users. That spend is not neutral; it's counterproductive.
 
 **→ Chart 3 — Incremental CVR by frequency band.**  
 Line chart with two series: all audiences combined, and retargeting only. Retargeting peaks earlier and drops off harder. Add a dashed vertical line at frequency 9 labelled "waste starts here."
@@ -135,11 +135,11 @@ Line chart with two series: all audiences combined, and retargeting only. Retarg
 **1. Hot retargeting costs €500 per incremental conversion, not €55.**  
 The €55 CPA is real — the conversions happen. But 89% of those users were going to buy regardless. The spend covered witnessing purchases, not causing them.
 
-**2. TikTok 18–24 is a better investment than Meta hot retargeting when measured incrementally — the reported metrics show it backwards.**  
+**2. TikTok 18–24 is a better investment than Meta hot retargeting when measured incrementally. The reported metrics show it backwards.**  
 TikTok 18–24 true CPA: €137. Meta hot retargeting true CPA: €500. The audience that looks more expensive in the dashboard is the one actually driving new demand.
 
 **3. YouTube retargeting has a 9% lift rate. That's €650K/month for limited incremental value.**  
-91% of conversions from that audience were going to happen anyway. YouTube does work — but only for prospecting. YouTube brand safety audiences showed 56% lift. Same platform, completely different result.
+91% of conversions from that audience were going to happen anyway. YouTube does work, but only for prospecting. YouTube brand safety audiences showed 56% lift. Same platform, completely different result.
 
 **4. UGC creative outperforms branded studio content by 17 percentage points on incremental lift.**  
 This isn't about cost. UGC reaches people who don't already know the brand. Lower baseline intent means more room for the ad to change behaviour. Branded content performs better on audiences that are already warm — which means it's less likely to be the reason they convert.
