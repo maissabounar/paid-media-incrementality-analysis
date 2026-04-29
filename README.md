@@ -171,7 +171,8 @@ Start at 26,400. Remove conversions lost from retargeting cuts (−4,200). Add c
 
 ![Budget reallocation waterfall](images/chart_4_waterfall.png)
 
-One thing to flag upfront: reported CPA will go up after this change. Prospecting always looks worse than retargeting in platform dashboards because it reaches people who weren't already about to convert. If the team optimises back toward reported CPA, the budget drifts back to retargeting within 6 weeks and the analysis is wasted. Changing the budget without changing the KPIs doesn't work.
+> [!IMPORTANT]
+>One thing to flag upfront: reported CPA will go up after this change. Prospecting always looks worse than retargeting in platform dashboards because it reaches people who weren't already about to convert. If the team optimises back toward reported CPA, the budget drifts back to retargeting within 6 weeks and the analysis is wasted. Changing the budget without changing the KPIs doesn't work.
 
 ---
 
@@ -206,7 +207,9 @@ pip install -r requirements.txt
 python python/generate_data.py    # → data/synthetic_data.csv
 python python/generate_charts.py  # → images/chart_*.png
 ```
-A sample dataset is included. Full dataset can be regenerated via script.
+
+> [!NOTE]
+>A sample dataset is included. Full dataset can be regenerated via script.
 
 `generate_data.py` creates a 20K-user synthetic dataset with the schema described above.  
 `generate_charts.py` runs propensity matching on that data (Chart 1) and renders all four charts.
@@ -314,4 +317,5 @@ def match(df: pd.DataFrame, caliper: float = 0.01) -> pd.DataFrame:
 
 ---
 
-*Data is synthetic and modelled on realistic campaign structures.*
+> [!NOTE]
+>*Data is synthetic and modelled on realistic campaign structures.*
