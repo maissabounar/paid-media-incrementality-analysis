@@ -6,7 +6,7 @@
 
 **Dashboards showed 3.0× ROAS. Real performance was 1.25×.**
 
-Reported CPA: €106. True CPA: €246. The €140 difference is what was being paid to claim credit for purchases that were already going to happen.
+Reported CPA: €106. True CPA: €246. The €140 gap is the cost of taking credit for purchases that would have happened anyway.
 
 Propensity Score Matching was applied to 340K users to separate which audiences the ads actually drove — and which ones would have converted anyway.
 
@@ -20,7 +20,7 @@ Propensity Score Matching was applied to 340K users to separate which audiences 
 
 ---
 
-## Business Impact
+## Executive Summary
 
 **The problem.** €2.9M/month is currently allocated to retargeting. Hot retargeting shows €55 CPA in the dashboard. The real cost, once you strip out users who were buying anyway, is €500.
 
