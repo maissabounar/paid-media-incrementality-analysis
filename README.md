@@ -2,6 +2,10 @@
 
 > **€6.5M/month - France - UK - Germany -- TikTok, Meta, YouTube · Q3 2025**
 
+
+![ROAS](https://img.shields.io/badge/ROAS-1.25x-red)
+![Budget](https://img.shields.io/badge/Budget-€6.5M-blue)
+![Markets](https://img.shields.io/badge/Markets-FR_UK_DE-green)
 ---
 
 **Dashboards showed 3.0× ROAS. Real performance was 1.25×.**
