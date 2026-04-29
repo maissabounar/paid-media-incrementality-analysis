@@ -34,7 +34,7 @@ Propensity Score Matching was applied to 340K users to separate which audiences 
 
 ## The Problem
 
-Platform attribution gives credit to any ad the user saw in the 7 days before purchasing. That's not causation — that's just proximity.
+Platform attribution gives credit to any ad the user saw in the 7 days before purchasing. That's not causation, that's just proximity.
 
 Retargeting targets people who already abandoned a cart, already visited the site multiple times, already searched the brand. These users were going to buy. An ad was shown, they purchased, and the platform took credit.
 
