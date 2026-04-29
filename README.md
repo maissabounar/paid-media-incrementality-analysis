@@ -20,7 +20,7 @@ Propensity Score Matching was applied to 340K users to separate which audiences 
 
 ---
 
-## What I'd Tell the CMO
+## Business Impact
 
 **The problem.** €2.9M/month is currently allocated to retargeting. Hot retargeting shows €55 CPA in the dashboard. The real cost, once you strip out users who were buying anyway, is €500.
 
